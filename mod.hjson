@@ -4,5 +4,5 @@ author: Highfire1
 description: "A mod to make speedrunning easier"
 version: "0.1"
 minGameVersion: "135"
-dependencies: [ ]
+dependencies: ["ui-lib"]
 hidden: false

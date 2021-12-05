@@ -1,8 +1,10 @@
-// listen for the event where a unit is destroyed
-Events.on(UnitDestroyEvent, event => {
-    // display toast on top of screen when the unit was a player
-    if(event.unit.isPlayer()){
-      Vars.ui.hudfrag.showToast("Pathetic.");
-    }
-  })
-  
+(() => {
+
+    const ui = require("ui-lib/library");
+    
+    ui.addButton("thorium-grabber", Items.thorium, () => {
+        const core = Vars.state.teams.cores(Vars.player.team).first().tile;
+        Call.requestItem(Vars.player, core, Items.thorium, 15);
+    });
+    
+    })();
