@@ -1,0 +1,8 @@
+name: "speedrun-helper"
+displayName: "speedrun-helper"
+author: Highfire1
+description: "A mod to make speedrunning easier"
+version: "0.1"
+minGameVersion: "135"
+dependencies: [ ]
+hidden: false
